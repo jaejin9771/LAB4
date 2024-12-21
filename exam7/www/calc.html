@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>간단한 계산기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .calculator {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, select {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>계산기</h2>
+        <form action="/calculator" method="GET">
+            <input type="number" name="num1" placeholder="첫 번째 숫자" required>
+            <select name="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">×</option>
+                <option value="/">÷</option>
+            </select>
+            <input type="number" name="num2" placeholder="두 번째 숫자" required>
+            <input type="submit" value="계산">
+        </form>
+    </div>
+</body>
+</html>
